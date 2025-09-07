@@ -30,7 +30,7 @@ const Gift = () => {
       sx={{
         py: 8,
         px: 2,
-        backgroundColor: "#F6EEDC",
+        backgroundColor: "#EEE7DD",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -46,7 +46,7 @@ const Gift = () => {
         >
             <Box
   component="img"
-  src="/images/004/REGALO.gif"
+  src="/images/004/regalo.gif"
   alt="Ceremonia"
   sx={{
     width: 125,       // equivalente a fontSize: 100
@@ -60,15 +60,15 @@ const Gift = () => {
             sx={{
               fontFamily: "'Quicksand'",
               fontSize: { xs: "1.2rem", md: "2rem" },
-              color: "#0B1D4D",
+              color: "#000000",
               fontWeight: "semibold",
               maxWidth: 600,
               mb: 4,
             }}
           >
-         Amor no nos falta....  <br />
-         Salud tampoco <br />
-         Pero un poquito de dinero nunca viene mal <br/>
+         Amor no nos falta.... 
+         Salud tampoco,
+         Pero un poquito de dinero nunca viene mal. 
          Si quieren ayudarnos con el regalito, aqui la cuenta
           </Typography>
 
@@ -129,7 +129,7 @@ const Gift = () => {
             {/* Ícono arriba del modal */}
             <Box
   component="img"
-  src="/images/004/REGALO.gif"
+  src="/images/004/regalo.gif"
   alt="Ceremonia"
   sx={{
     width: 125,       // equivalente a fontSize: 100
@@ -141,7 +141,7 @@ const Gift = () => {
             <Typography variant="h6" fontWeight="bold" gutterBottom sx={{
               fontFamily: "'Eyesome'",
               fontSize: { xs: "2.5rem", md: "3.5rem" },
-              color: "#0B1D4D",
+              color: "#000000",
               mb: 1,
             }}>
               Datos Bancarios
@@ -150,13 +150,13 @@ const Gift = () => {
             <Typography variant="body1" gutterBottom sx={{
               fontFamily: "'Quicksand'",
               fontSize: { xs: "1rem", md: "1.5rem" },
-              color: "#0B1D4D",
+              color: "#000000",
               mb: 1,
               fontWeight:600
             }}>
-              Nombre del Titular: Dessimoni Debora Ines
+              Alias: tierramisionera.w
               <br />
-              Alias: leoydeby50.mp
+              CBU: 0070308430004034501620
             </Typography>
 
    

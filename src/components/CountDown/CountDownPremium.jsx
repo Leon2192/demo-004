@@ -42,7 +42,7 @@ const Countdown = () => {
       sx={{
         minHeight: "30vh",
         py: 6,
-        backgroundColor: "#7D6C45",
+        backgroundColor: "#9A887B",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -59,7 +59,7 @@ const Countdown = () => {
               fontFamily: "'Eyesome'",
               fontWeight: 500,
               mb: 1,
-              color: "#OB1D4D",
+              color: "#ffffff",
             }}
           >
             Faltan...
@@ -76,7 +76,7 @@ const Countdown = () => {
                   sx={{
                     fontSize: { xs: "2rem", md: "4rem" },
                     fontWeight: "bold",
-                    color: "#OB1D4D",
+                    color: "#ffffff",
                     fontFamily: "'Quicksand'",
                   }}
                 >
@@ -87,7 +87,7 @@ const Countdown = () => {
                     textTransform: "capitalize",
                     fontSize: { xs: "1rem", md: "1.2rem" },
                     fontFamily: "'Quicksand'",
-                    color: "#555",
+                    color: "#ffffff",
                   }}
                 >
                   {unit}

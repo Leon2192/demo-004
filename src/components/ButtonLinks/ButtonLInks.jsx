@@ -11,9 +11,9 @@ export default function ButtonLinks({
   const baseSx = {
     borderRadius: 999,
     px: 4,
-    backgroundColor: "#0B1D4D",
+    backgroundColor: "#000000", // 🔑 fondo negro
     fontFamily: "'Quicksand'",
-    color: "#F6F4F0",
+    color: "#FFFFFF", // 🔑 texto blanco
     boxShadow: "none",
     transition: "transform .2s ease, background-color .2s ease, color .2s ease",
     ...(bounce && { animation: "bounceBtn 2s infinite" }),
@@ -23,29 +23,29 @@ export default function ButtonLinks({
       "60%": { transform: "translateY(-3px)" },
     },
 
-    /* Hover solo mientras está el puntero encima */
+    /* Hover: aclaramos un poco el negro */
     "&:hover": {
-      backgroundColor: "#F6EEDC",
-      color: "#274490",
+      backgroundColor: "#333333",
+      color: "#FFFFFF",
       transform: "scale(1.05)",
     },
 
-    /* Al presionar, vuelve a los colores base (y un tiny press) */
+    /* Al presionar vuelve a negro y achica */
     "&:active, &:hover:active": {
-      backgroundColor: "#0B1D4D",
-      color: "#F6F4F0",
+      backgroundColor: "#000000",
+      color: "#FFFFFF",
       transform: "scale(0.98)",
     },
 
-    /* Evita estilos raros por focus */
+    /* Focus limpio */
     "&:focus": { outline: "none", boxShadow: "none" },
     "&:focus-visible": {
-      outline: "2px solid #F6EEDC",
+      outline: "2px solid #FFFFFF",
       outlineOffset: "2px",
     },
 
     /* Si es <a>, evita cambios por visited */
-    "&:visited": { color: "#F6F4F0" },
+    "&:visited": { color: "#FFFFFF" },
   };
 
   const commonProps = {
@@ -55,7 +55,6 @@ export default function ButtonLinks({
     disableRipple: true,
     onClick: (e) => {
       onClick?.(e);
-      // saca el focus para que no quede el estado activo/hover pegado
       e.currentTarget.blur();
     },
     onMouseUp: (e) => e.currentTarget.blur(),

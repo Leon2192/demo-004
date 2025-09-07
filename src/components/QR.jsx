@@ -1,6 +1,5 @@
-import { Box, Typography, Fade , Divider} from "@mui/material";
+import { Box, Typography, Fade } from "@mui/material";
 import { useInView } from "react-intersection-observer";
-import ButtonLinks from "./ButtonLinks/ButtonLInks";
 
 const Qr = () => {
   const { ref, inView } = useInView({
@@ -15,7 +14,7 @@ const Qr = () => {
         minHeight: "30vh",
         py: 8,
         px: 2,
-        backgroundColor: "#83A2D8", 
+        backgroundColor: "#9A887B",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -49,7 +48,7 @@ const Qr = () => {
             sx={{
               fontFamily: "'Eyesome'",
               fontSize: { xs: "2.5rem", md: "3.5rem" },
-              color: "#0B1D4D",
+              color: "#ffffff",
               mb: 1,
             }}
           >
@@ -61,7 +60,7 @@ const Qr = () => {
             sx={{
               fontFamily: "'Quicksand'",
               fontSize: { xs: "1.2rem", md: "1.5rem" },
-              color: "#0B1D4D",
+              color: "#ffffff",
               mb: 2,
             }}
           >
@@ -69,39 +68,46 @@ const Qr = () => {
           </Typography>
 
           <Typography
-  variant="body1"
-  sx={{
-    fontFamily: "'Quicksand'",
+            variant="body1"
+            sx={{
+              fontFamily: "'Quicksand'",
               fontSize: { xs: "1.2rem", md: "1.5rem" },
-              color: "#0B1D4D",
+              color: "#ffffff",
               mb: 1,
-  }}
->
-  O podés presionar aquí
-</Typography>
+            }}
+          >
+            O podés presionar aquí
+          </Typography>
 
-<Box mt={2}>
-  <Box
-    component="a"
-    href="https://photos.google.com/share/AF1QipMF4Niy7oe5VTaE9V4WC7LanXP3kaQVgsRL9nHsI6i5FX5jOpjJKcJxK8JW9Ar8eg?key=V2ZJMWMyZ0hpcHNnbVhmYno1LUpBLTd4bTdYV1pn"
-    target="_blank"
-    rel="noopener noreferrer"
-    sx={{ textDecoration: "none" }}
-  >
-    
-<ButtonLinks
-  label="Ir Al Album"
-  href="https://photos.google.com/share/AF1QipMF4Niy7oe5VTaE9V4WC7LanXP3kaQVgsRL9nHsI6i5FX5jOpjJKcJxK8JW9Ar8eg?key=V2ZJMWMyZ0hpcHNnbVhmYno1LUpBLTd4bTdYV1pn"
-  newTab
-/>
-
-  </Box>
-</Box>
-
+          {/* Botón personalizado */}
+          <Box mt={2}>
+            <Box
+              component="a"
+              href="https://photos.google.com/share/AF1QipMF4Niy7oe5VTaE9V4WC7LanXP3kaQVgsRL9nHsI6i5FX5jOpjJKcJxK8JW9Ar8eg?key=V2ZJMWMyZ0hpcHNnbVhmYno1LUpBLTd4bTdYV1pn"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                display: "inline-block",
+                px: 4,
+                py: 1.2,
+                borderRadius: "50px",
+                backgroundColor: "#ffffff",
+                color: "#000000",
+                fontFamily: "'Quicksand', sans-serif",
+                fontWeight: "bold",
+                fontSize: "1rem",
+                textDecoration: "none",
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#f0f0f0",
+                },
+              }}
+            >
+              Ir al Álbum
+            </Box>
+          </Box>
         </Box>
       </Fade>
-
-       
     </Box>
   );
 };

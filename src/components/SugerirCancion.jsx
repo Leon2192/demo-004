@@ -15,7 +15,7 @@ const SuggestSong = () => {
         minHeight: "40vh",
         py: 8,
         px: 2,
-        backgroundColor: "#F6EEDC", 
+        backgroundColor: "#EEE7DD", 
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -34,7 +34,7 @@ const SuggestSong = () => {
           {/* Icono con animación tipo "latido" */}
           <Box
   component="img"
-  src="/images/004/sug.gif"
+  src="/images/004/SUGE.gif"
   alt="Ceremonia"
   sx={{
     width: 125,       // equivalente a fontSize: 100
@@ -49,7 +49,7 @@ const SuggestSong = () => {
             
                 fontFamily: "'Prata'",
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
-                color: "#0B1D4D",
+                color: "#000000",
                 mb: 1,
             }}
           >
@@ -61,7 +61,7 @@ const SuggestSong = () => {
             sx={{
               fontFamily: "'Prata'",
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
-                color: "#0B1D4D",
+                color: "#000000",
                 mb: 4
             }}
           >
@@ -70,14 +70,14 @@ const SuggestSong = () => {
 
          <Button
   component="a"
-  href="https://docs.google.com/forms/d/e/1FAIpQLSftAoalCuGuYTLaDCS7V07H8hxJuYWdFef5rd44OqfnP7RWmw/viewform"
+  href="https://docs.google.com/forms/d/e/1FAIpQLSc2uxwiI2MfAWKmKfSAJcNQE0k0HDYtTROVzYI2In3A2e3YqA/viewform"
   target="_blank"
   rel="noopener noreferrer"
   variant="contained"
   sx={{
     borderRadius: 999,
     px: 4,
-    backgroundColor: "#0B1D4D",
+    backgroundColor: "#000000",
     fontFamily: "'Prata'",
     color: "#ffffff",
     boxShadow: "none",
@@ -96,7 +96,7 @@ const SuggestSong = () => {
     },
     "&:hover": {
       backgroundColor: "#fff",
-      color: "#0B1D4D",
+      color: "#000000",
       transform: "scale(1.05)", // efecto de agrandar en hover
     },
   }}

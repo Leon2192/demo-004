@@ -8,7 +8,7 @@ const Confirm = () => {
         minHeight: "40vh",
         py: 8,
         px: 2,
-        backgroundColor: "#BBC9EE",
+        backgroundColor: "#ffffff",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -21,7 +21,7 @@ const Confirm = () => {
         {/* Icono animado */}
         <Box
           component="img"
-          src="/images/004/confirm.gif"
+          src="/images/004/confi.gif"
           alt="Ceremonia"
           sx={{
             width: 125,
@@ -36,7 +36,7 @@ const Confirm = () => {
           sx={{
             fontFamily: "'Eyesome'",
             fontSize: { xs: "2.5rem", md: "3.5rem" },
-            color: "#0B1D4D",
+            color: "#000000",
             fontWeight: "semibold",
             mb: 2,
           }}
@@ -50,7 +50,7 @@ const Confirm = () => {
           sx={{
             fontFamily: "'Quicksand'",
             fontSize: { xs: "1.2rem", md: "1.5rem" },
-            color: "#0B1D4D",
+            color: "#000000",
             mb: 4,
           }}
         >
@@ -60,7 +60,7 @@ const Confirm = () => {
         {/* Botón */}
         <ButtonLinks
           label="Confirmar Asistencia"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdHSoF31u_6XP6Ku7wwSzZy1pKMS-9AfEVfhqgDXn4YCSmipg/viewform?usp=header"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeX82zY2EI3GurJbSlHvWYpIeIJ1yPua-9RYNXdnjlY3a_l2A/viewform"
           newTab
         />
       </Box>

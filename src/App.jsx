@@ -12,6 +12,7 @@ import SuggestSong from "./components/SugerirCancion";
 import Qr from "./components/QR";
 import Gallery from "./components/Gallery/GalleryPremium";
 import Thanks from "./components/Thanks";
+import Saturday from "./components/Saturday";
 
 
 function Loader() {
@@ -62,6 +63,7 @@ function App() {
   return (
     <>
       <Hero />
+      <Saturday/>
       <Countdown />
       <InfoEvent />
       <Gallery />

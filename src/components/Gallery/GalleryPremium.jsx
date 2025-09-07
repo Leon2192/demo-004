@@ -64,9 +64,9 @@ const Gallery = () => {
           display: { xs: "block", sm: "none" },
           mb: 4,
           textAlign: "center",
-          fontFamily: "'Great Vibes', cursive",
+          fontFamily: "'Eyesome'",
           fontWeight: "bold",
-          color: "#0B1D4D",
+          color: "#000000",
         }}
       >
         Galería
@@ -92,7 +92,7 @@ const Gallery = () => {
                   aspectRatio: CARD_RATIO,
                   borderRadius: 2,
                   overflow: "hidden",
-                  bgcolor: "#f5f5f5",
+                  bgcolor: "#ffffff",
                 }}
                 onClick={() => handleOpen(index)}
               >

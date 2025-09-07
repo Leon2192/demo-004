@@ -16,7 +16,7 @@ const Dresscode = () => {
         minHeight: "30vh",
         py: 8,
         px: 2,
-        backgroundColor: "#83A2D8", // verde pastel suave
+        backgroundColor: "#9A887B", // verde pastel suave
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -47,7 +47,7 @@ const Dresscode = () => {
             sx={{
               fontFamily: "'Eyesome'",
               fontSize: { xs: "2.5rem", md: "3.5rem" },
-              color: "#0B1D4D",
+              color: "#ffffff",
               fontWeight: "semibold",
               mb: 1,
             }}
@@ -60,10 +60,10 @@ const Dresscode = () => {
   sx={{
     fontFamily: "'Quicksand'",
     fontSize: { xs: "1.2rem", md: "1.5rem" },
-    color: "#0B1D4D",
+    color: "#ffffff",
   }}
 >
-Elegante Sport
+Elegante Sport (Se reserva el color blanco y ... )
   
 </Typography>
 
