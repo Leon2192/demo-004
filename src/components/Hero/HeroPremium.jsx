@@ -147,7 +147,7 @@ const Hero = () => {
           },
         }}
       >
-        <a href="#info" style={{ color: "#5A7790", textDecoration: "none" }}>
+        <a href="#info" style={{ color: "#000000", textDecoration: "none" }}>
           <KeyboardArrowDownIcon fontSize="inherit" />
         </a>
       </Box>
