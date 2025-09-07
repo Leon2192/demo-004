@@ -18,7 +18,7 @@ const InfoEvent = () => {
       {/* Imagen de fondo */}
       <Box
         component="img"
-        src="/images/004/fondoceremonia.webp"
+        src="/images/004/fondito.webp"
         alt="Ceremonia y Fiesta"
         sx={{
           width: "100%",
@@ -42,6 +42,8 @@ const InfoEvent = () => {
       >
         <Slide in={inView} direction="up" timeout={800}>
           <Box>
+            <br />
+            <br />
             <Typography
               variant="h4"
               gutterBottom
