@@ -23,7 +23,7 @@ const Saturday = () => {
           {/* 👇 usamos la imagen directamente */}
           <Box
             component="img"
-            src="/images/004/sabado.webp"
+            src="/images/004/domingo.webp"
             alt="Saturday"
             sx={{
               width: "100%",

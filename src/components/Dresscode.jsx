@@ -63,7 +63,7 @@ const Dresscode = () => {
     color: "#ffffff",
   }}
 >
-Elegante Sport (Se reserva el color blanco y ... )
+Elegante Sport (Se reserva el color blanco)
   
 </Typography>
 

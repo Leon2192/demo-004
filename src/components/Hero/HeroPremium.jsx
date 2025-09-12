@@ -36,7 +36,7 @@ const Hero = () => {
     setIsPlaying(!isPlaying);
   };
 
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
@@ -72,54 +72,75 @@ const Hero = () => {
       />
 
       {/* Contenido principal */}
+      {/* Botón de música + Texto */}
       <Box
-        sx={{
-          zIndex: 2,
-          px: 2,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          transform: inView ? "scale(1)" : "scale(0.95)",
-          transition: "transform 1s ease",
-        }}
-      >
-    
-
-      </Box>
-
-      {/* Botón de música */}
-      <IconButton
-  onClick={toggleAudio}
   sx={{
     position: "absolute",
     top: 20,
     right: 20,
     zIndex: 3,
-    backgroundColor: "rgba(255,255,255,0.7)",
-    color: "#000",
-    width: 50,
-    height: 50,
-    borderRadius: "50%",
-    boxShadow: 2,
-    animation: "bounceMusic 1.5s infinite", // 👈 animación aplicada
-    "@keyframes bounceMusic": {
-      "0%, 20%, 50%, 80%, 100%": {
-        transform: "translateY(0)",
-      },
-      "40%": {
-        transform: "translateY(-6px)",
-      },
-      "60%": {
-        transform: "translateY(-3px)",
-      },
-    },
-    "&:hover": {
-      backgroundColor: "rgba(255,255,255,0.9)",
-    },
+    display: "flex",
+    flexDirection: "column", // texto debajo
+    alignItems: "center",
+    gap: 0.5,
   }}
 >
-  {isPlaying ? <PauseIcon /> : <MusicNoteIcon />}
-</IconButton>
+  <IconButton
+    onClick={toggleAudio}
+    sx={{
+      backgroundColor: "rgba(255,255,255,0.7)",
+      color: "#000",
+      width: 50,
+      height: 50,
+      borderRadius: "50%",
+      boxShadow: 2,
+      animation: "bounceMusic 1.5s infinite",
+      "@keyframes bounceMusic": {
+        "0%, 20%, 50%, 80%, 100%": {
+          transform: "translateY(0)",
+        },
+        "40%": {
+          transform: "translateY(-6px)",
+        },
+        "60%": {
+          transform: "translateY(-3px)",
+        },
+      },
+      "&:hover": {
+        backgroundColor: "rgba(255,255,255,0.9)",
+      },
+    }}
+  >
+    {isPlaying ? <PauseIcon /> : <MusicNoteIcon />}
+  </IconButton>
+
+  <Typography
+    variant="subtitle2"
+    sx={{
+      color: "#000",
+      fontWeight: "bold",
+      backgroundColor: "rgba(255,255,255,0.7)",
+      px: 1,
+      py: 0.3,
+      borderRadius: "6px",
+      animation: "bounceText 1.5s infinite", // animación
+      "@keyframes bounceText": {
+        "0%, 20%, 50%, 80%, 100%": {
+          transform: "translateY(0)",
+        },
+        "40%": {
+          transform: "translateY(-6px)",
+        },
+        "60%": {
+          transform: "translateY(-3px)",
+        },
+      },
+    }}
+  >
+    {!isPlaying ? "¡Apretá Play!" : "Pausar audio"}
+  </Typography>
+</Box>
+
 
       {/* Audio element */}
       <audio ref={audioRef} src="/images/004/song.mp3" preload="auto" />

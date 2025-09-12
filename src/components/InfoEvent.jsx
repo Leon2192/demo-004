@@ -11,7 +11,7 @@ const InfoEvent = () => {
     "Jano's Pilar Hotel - Jorge Manfredi 1455 - Pilar, Buenos Aires";
 
   const mapsUrl =
-    "https://www.google.com/maps/place/Janos+Pilar/@-34.4461484,-58.9278216,14z/data=!4m10!1m2!2m1!1sjanos+pilar+hotel!3m6!1s0x95bc9ce3d9b1512b:0x6ec2c4b8b23193bc!8m2!3d-34.4461484!4d-58.8917727";
+    "https://www.google.com/maps/place/Jano's+Pilar+Hotel/@-34.4577315,-58.8902709,17z/data=!3m1!4b1!4m6!3m5!1s0x95bc9d9131a061ef:0xf54dec26651ab26d!8m2!3d-34.4577315!4d-58.887696!16s%2Fg%2F11ydxyv8vw?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D";
 
   return (
     <Box ref={ref} sx={{ position: "relative", width: "100%" }}>
