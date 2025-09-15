@@ -149,7 +149,7 @@ const Gift = () => {
 
             <Typography variant="body1" gutterBottom sx={{
               fontFamily: "'Quicksand'",
-              fontSize: { xs: "1rem", md: "1.5rem" },
+              fontSize: { xs: "1.3rem", md: "1.5rem" },
               color: "#000000",
               mb: 1,
               fontWeight:600
@@ -157,6 +157,9 @@ const Gift = () => {
               Alias: tierramisionera.w
               <br />
               CBU: 0070308430004034501620
+              <br />
+              <br />
+              También podes dejarnos un sobre en un 📬 que tendremos en el Salón
             </Typography>
 
    
