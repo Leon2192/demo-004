@@ -68,7 +68,7 @@ const InfoEvent = () => {
                 lineHeight: 1.4,
               }}
             >
-              Sábado 15 de Febrero de 2026
+              Domingo 15 de Febrero de 2026
             </Typography>
 
             <Typography
